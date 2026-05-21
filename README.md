@@ -1,4 +1,4 @@
-"""✊✋✌️ Rock, Paper, Scissors Game
+#✊✋✌️ Rock, Paper, Scissors Game
 An interactive, responsive, and modern web-based implementation of the classic **Rock, Paper, Scissors** game. This project highlights crisp UI design built with semantic HTML5 and custom CSS3, powered by a vanilla JavaScript logic engine featuring automated score tracking, state changes, and dynamic win/loss animations.
 ---
 
