@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.modal {
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    height: 50vh;
+    background-color: #3B7597;
+    position: fixed;
+    top: 30%;
+    left: 22%;
+    z-index: 1;
+
+    font-family: "VS-Font";
+    font-size: 4rem;
+    letter-spacing: 2px;
+
+    border-radius: 10px;
+}
+
+.again {
+    margin: 1rem 0 1rem 0;
+    font-family: "VS-Font";
+    font-size: 2rem;
+    
+}
+
+#winner {
+    font-size: 15rem;
+}
+
+main  {
+    display: grid;
+    grid-template-columns: auto min-content auto;
+}
+
+#PlayerSide {
+    height: 100vh;
+    background-color: #1591DC;
+
+    display: grid;
+    grid-template-rows: min-content auto;
+
+}
+
+#PlayerOptions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+button {
+    width: 30%;
+    height: 15rem;
+    border: 10px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px black;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+.rock {
+    background: url("assets/rock.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paper {
+    background: url("assets/paper.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scissors {
+    background: url("assets/scissors.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.UserHeading h1{
+    text-align: center;
+    font-family: "VS-Font";
+    font-size: 5rem;
+    letter-spacing: 0.25rem;
+    font-weight: 400;
+}
+
+#VS {
+    display: grid;
+    grid-template-rows: min-content auto;
+
+    background: linear-gradient(to right,
+        #1591DC 0%,
+        #1591DC 50%,
+        #C4E2F5 0%,
+        #C4E2F5 50%
+    );
+}
+
+#scores {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#VS-Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    pointer-events: none;
+    cursor: not-allowed;
+
+    text-shadow: 2px 2px 4px red;
+}
+
+#VS-Text h1{
+    font-family: "VS-Font";
+    font-size: 20rem;
+    font-style: italic;
+
+    position: relative;
+    right: 2.9rem;
+}
+
+#ComputerSide {
+    height: 100vh;
+    background-color: #C4E2F5;
+
+    display: grid;
+    grid-template-rows: min-content auto;
+
+}
+
+#ComputerOption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ComputerOption > button {
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+
+
+@font-face {
+    font-family: "VS-Font";
+    src: url('assets/fonts/MKXTitle.ttf');
+}
